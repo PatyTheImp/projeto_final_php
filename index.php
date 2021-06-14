@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="css/aos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pangolin&display=swap" rel="stylesheet">
     <!-- Meu CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +24,7 @@
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="imagens/gundam.png" height="40" alt="gundam"></a>
+            <a class="navbar-brand" href="index.php"><img src="imagens/gundam.png" height="40" alt="gundam"> Animes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,34 +62,40 @@
 
     <div class="container">
 
-        <!-- card -->
+        <!-- card a direita-->
         <div class="card text-white bg-dark mt-3 border-light" data-aos="fade-right">
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="imagens/naruto-shippuden-i84239.jpg" alt="..." height="300">
+                <img src="imagens/naruto-shippuden-i84239.jpg" alt="..." class="img-fluid">
                 </div>
                 <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text"><b>Género: </b>Ação</p>
+                    <p class="card-text"><b>Premier: </b>12-03-1999</p>
+                    <p class="card-text"><b>Estudio: </b>Mad House</p>
+                    <p class="card-text"><b>Score: </b>8,34/10</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 </div>
             </div>
         </div>
 
-        <!-- card -->
+        <!-- card a esquerda-->
         <div class="card text-white bg-dark mt-3 border-light" data-aos="fade-left">
             <div class="row g-0">               
-                <div class="col-md-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="col-md-4 d-flex">
+                    <div class="card-body ms-auto">
+                        <h3 class="card-title">Card title</h3>
+                        <p class="card-text"><b>Género: </b>Ação</p>
+                        <p class="card-text"><b>Premier: </b>12-03-1999</p>
+                        <p class="card-text"><b>Estudio: </b>Mad House</p>
+                        <p class="card-text"><b>Score: </b>8,34/10</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
                 <div class="col-md-8 d-flex">
-                <img src="imagens/Devilman-Crybaby-Análise-4.jpg" alt="..." height="300" class="ms-auto">
+                <img src="imagens/Devilman-Crybaby-Análise-4.jpg" alt="..." class="ms-auto img-fluid">
                 </div>
             </div>
         </div>
@@ -95,12 +104,15 @@
         <div class="card text-white bg-dark mt-3 border-light" data-aos="fade-right">
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="imagens/death-note-cartaz.jpg" alt="..." height="300">
+                <img src="imagens/death-note-cartaz.jpg" alt="..." class="img-fluid">
                 </div>
                 <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text"><b>Género: </b>Ação</p>
+                    <p class="card-text"><b>Premier: </b>12-03-1999</p>
+                    <p class="card-text"><b>Estudio: </b>Mad House</p>
+                    <p class="card-text"><b>Score: </b>8,34/10</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 </div>
