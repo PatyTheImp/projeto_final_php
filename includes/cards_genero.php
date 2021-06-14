@@ -2,12 +2,21 @@
 
 <?php
 
+$g_id = '';
+    if (isset($_GET['g_id']))
+        $g_id = $_GET['g_id'];
+
 $i = 0;
-$query = "SELECT * FROM animes";
+$query = "SELECT * FROM animes WHERE genero_id = {$g_id}";
 $todos_animes = mysqli_query($connection, $query);
 
 if (!$todos_animes)
     die('ERRO: ' . mysqli_error($connection));
+
+$num_registos = mysqli_num_rows($todos_animes);
+
+if ($num_registos == 0)
+    echo "<h1 class='text-center'>Nenhum anime encontrado</h1>";
 
 while ($row = mysqli_fetch_array($todos_animes)):
 

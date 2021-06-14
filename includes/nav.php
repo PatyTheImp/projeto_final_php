@@ -18,20 +18,37 @@
                     </ul>
                 </li>
 
+                <!-- Dropdown dos géneros -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-list-ul"></i> Géneros
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Ação</a></li>
-                        <li><a class="dropdown-item" href="#">Comédia</a></li>
-                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+
+                        <?php
+                        
+                        $query = "SELECT * FROM generos";
+                        $todos_generos = mysqli_query($connection, $query);
+
+                        if (!$todos_generos)
+                            die('ERRO: ' . mysqli_error($connection));
+
+                        while ($row = mysqli_fetch_array($todos_generos))
+                        {
+                            $id = $row['id'];
+                            $genero = $row['genero'];
+
+                            //Passo o id do género por URL para poder filtrar
+                            echo "<li><a class='dropdown-item' href='home.php?source=genero&g_id={$id}'>{$genero}</a></li>";
+                        }
+                        
+                        ?>
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex" method="post">
-                <input class="form-control me-2" type="search" placeholder="Procurar por nome" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+            <form class="d-flex" action="home.php?source=nome" method="post">
+                <input class="form-control me-2" type="search" name="nome_anime" placeholder="Procurar por nome" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit" name="procura_anime"><i class="bi bi-search"></i></button>
             </form>
         </div>
     </div>

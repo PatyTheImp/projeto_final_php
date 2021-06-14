@@ -1,3 +1,5 @@
+<!-- Conecção a base de dados -->
+<?php include "includes/db.php"; ?>
 <!-- Header -->
 <?php include "includes/header.php" ?>
 
@@ -12,10 +14,17 @@
         $source = '';
         if (isset($_GET['source']))
             $source = $_GET['source'];
+
         switch ($source)
         {
-            case '1':
-                echo 'TEST';
+            //Cards filtradas por genero
+            case 'genero':
+                include "includes/cards_genero.php";
+                break;
+            
+            //Cards filtradas por nome
+            case 'nome':
+                include "includes/cards_nome.php";
                 break;
         
             default:

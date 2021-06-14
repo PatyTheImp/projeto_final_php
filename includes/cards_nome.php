@@ -2,12 +2,20 @@
 
 <?php
 
+if (isset($_POST['procura_anime']))
+    $nome_anime = $_POST['nome_anime'];
+
 $i = 0;
-$query = "SELECT * FROM animes";
+$query = "SELECT * FROM animes WHERE nome LIKE '%{$nome_anime}%'";
 $todos_animes = mysqli_query($connection, $query);
 
 if (!$todos_animes)
     die('ERRO: ' . mysqli_error($connection));
+
+$num_registos = mysqli_num_rows($todos_animes);
+
+if ($num_registos == 0)
+    echo "<h1 class='text-center'>Nenhum anime encontrado</h1>";
 
 while ($row = mysqli_fetch_array($todos_animes)):
 
