@@ -65,7 +65,7 @@
             </li>
             <li class="nav-item">
               <h6>
-                <a class="nav-link" href="../index.php">
+                <a class="nav-link" href="../home.php">
                   <i class="bi bi-house-door-fill"></i> Home
                 </a>
               </h6>

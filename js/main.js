@@ -1,3 +1,4 @@
+//Video Background
 (function () {
 
     var bv = new Bideo();
@@ -22,7 +23,7 @@
       // of different video formats to add
       src: [
         {
-          src: 'imagens/GIFMaterial.mp4',
+          src: 'imagens/anime_video.mp4',
           type: 'video/mp4'
         },
       ],
@@ -33,3 +34,5 @@
       }
     });
   }());
+
+  

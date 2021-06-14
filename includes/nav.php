@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img src="imagens/gundam.png" height="40" alt="gundam"> Animes</a>
+        <a class="navbar-brand" href="home.php"><img src="imagens/gundam.png" height="40" alt="gundam"> Animes</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

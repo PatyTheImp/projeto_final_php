@@ -48,3 +48,19 @@
     }
 
 }
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+footer h6 {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 30px;
+}
