@@ -88,9 +88,15 @@
 
                 //Dependendo do level do utilizador, ele é reencaminhado para uma pagina diferente
                 if ($_SESSION['level'] != 'guest')
+                {
                   header("Location: admin/index.php");
+                  exit();
+                }
                 else
+                {
                   header("Location: home.php");
+                  exit();
+                }
               }
             }
           }

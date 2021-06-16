@@ -101,6 +101,7 @@
         $_SESSION['level'] = 'guest';
 
         header("Location: home.php");
+        exit();
       }
     }
     
