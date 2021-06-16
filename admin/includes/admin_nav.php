@@ -29,12 +29,12 @@
                         <div class="accordion-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a class="text-dark" href="../index.php" style="text-decoration: none;">
+                                    <a class="text-dark" href="index.php?source=todos" style="text-decoration: none;">
                                         <i class="bi bi-table"></i> Todos os Animes
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a class="text-dark" href="#" style="text-decoration: none;"><i class="bi bi-plus-circle-fill"></i> Adcionar Anime</a>
+                                    <a class="text-dark" href="index.php?source=adicionar" style="text-decoration: none;"><i class="bi bi-plus-circle-fill"></i> Adicionar Anime</a>
                                 </li>
                             </ul>
                         </div>
@@ -44,7 +44,7 @@
             </div>
             <li class="nav-item">
                 <h6>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="index.php?source=utilizadores">
                         <span data-feather="users"></span>
                         <i class="bi bi-people-fill"></i> Gestão de Utilizadores
                     </a>

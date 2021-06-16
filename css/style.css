@@ -13,6 +13,10 @@
     
 }
 
+.img-fluid {
+    max-height: 280px;
+}
+
 .gradient-text {
     background-color: #CA4246;
     

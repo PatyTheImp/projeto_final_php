@@ -52,7 +52,7 @@
             return $horas;
         }
 
-        function comprimento()
+        function cumprimento()
         {
             $hora = date("H");
 
@@ -64,4 +64,12 @@
                 return "Boa tarde";
             else
                 return "Boa noite";
+        }
+
+        function verifica($sql_query)
+        {
+            global $connection;
+
+            if (!$sql_query)
+                die('ERRO: ' . mysqli_error($connection));
         }
