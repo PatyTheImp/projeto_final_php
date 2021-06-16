@@ -33,7 +33,7 @@ if (isset($_POST['editar_anime']))
     $imagem = $_FILES['imagem']['name'];
     $imagem_tmp = $_FILES['imagem']['tmp_name'];
 
-    $adicionado_por_id = 1;
+    $adicionado_por_id = $_SESSION['id'];
 
     if ($imagem == '')
         $imagem = $get_imagem;
@@ -50,6 +50,8 @@ if (isset($_POST['editar_anime']))
         premier = '{$premier}',
         estudio = '{$estudio}',
         score = {$score},
+        adicionado_por_usuario_id = {$adicionado_por_id},
+        data_reg = date('Y-m-d H:i:s'),
         imagem = '{$imagem}'
         WHERE id = {$an_id}";
 

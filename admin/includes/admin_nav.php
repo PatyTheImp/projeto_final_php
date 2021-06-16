@@ -4,7 +4,7 @@
             <li class="nav-item">
                 <h6>
                     <a class="nav-link disabled" aria-current="page" href="#">
-                        <i class="bi bi-person-fill"></i> Patrícia Costa
+                        <i class="bi bi-person-fill"></i> <?= "{$_SESSION['nome']} {$_SESSION['apelido']}" ?>
                     </a>
                 </h6>
             </li>
@@ -42,15 +42,17 @@
                 </div>
 
             </div>
-            <li class="nav-item">
-                <h6>
-                    <a class="nav-link" href="index.php?source=utilizadores">
-                        <span data-feather="users"></span>
-                        <i class="bi bi-people-fill"></i> Gestão de Utilizadores
-                    </a>
-                </h6>
-            </li>
-
+            <!-- Só o master admin tem acesso á gestão de utilizadores -->
+            <?php if ($_SESSION['level'] === 'master admin'): ?>
+                <li class="nav-item">
+                    <h6>
+                        <a class="nav-link" href="index.php?source=utilizadores">
+                            <span data-feather="users"></span>
+                            <i class="bi bi-people-fill"></i> Gestão de Utilizadores
+                        </a>
+                    </h6>
+                </li>
+            <?php endif; ?>
         </ul>
     </div>
 </nav>

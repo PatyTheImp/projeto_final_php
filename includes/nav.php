@@ -10,11 +10,16 @@
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-fill"></i> Patrícia Costa
+                        <i class="bi bi-person-fill"></i> <?= "{$_SESSION['nome']} {$_SESSION['apelido']}" ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="admin/index.php"><i class="bi bi-lock-fill"></i> Admin</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-door-open-fill"></i> Logout</a></li>
+
+                        <!-- Só os admin e master admin tem acesso a área de admin -->
+                        <?php if ($_SESSION['level'] != 'guest'): ?>
+                            <li><a class="dropdown-item" href="admin/index.php"><i class="bi bi-lock-fill"></i> Admin</a></li>
+                        <?php endif; ?>
+
+                        <li><a class="dropdown-item" href="logout.php"><i class="bi bi-door-open-fill"></i> Logout</a></li>
                     </ul>
                 </li>
 

@@ -15,7 +15,7 @@ if (isset($_POST['inserir_anime']))
     $imagem = $_FILES['imagem']['name'];
     $imagem_tmp = $_FILES['imagem']['tmp_name'];
 
-    $adicionado_por_id = 1;
+    $adicionado_por_id = $_SESSION['id'];
 
     //Adciona ficheiro a pasta
     move_uploaded_file($imagem_tmp, "../imagens/{$imagem}");

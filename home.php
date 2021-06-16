@@ -1,5 +1,17 @@
 <!-- Conecção a base de dados -->
 <?php include "includes/db.php"; ?>
+<!-- Para poder fazer refresh -->
+<?php ob_start(); ?>
+<!-- Para iniciar sessão -->
+<?php session_start(); ?>
+
+<?php
+
+if (!isset($_SESSION['level']))
+  header("Location: index.php");
+
+?>
+
 <!-- Header -->
 <?php include "includes/header.php" ?>
 

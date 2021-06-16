@@ -44,7 +44,7 @@
         <div class="navbar-collapse d-flex">
             <ul class="navbar-nav px-3 ms-auto">
                 <li class="nav-item text-nowrap">
-                    <a class="nav-link" href="#"><i class="bi bi-door-open-fill"></i> Logout</a>
+                    <a class="nav-link" href="../logout.php"><i class="bi bi-door-open-fill"></i> Logout</a>
                 </li>
             </ul>
         </div>

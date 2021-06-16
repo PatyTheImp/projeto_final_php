@@ -4,10 +4,18 @@
 <?php include "includes/functions.php"; ?>
 <!-- Para poder fazer refresh -->
 <?php ob_start(); ?>
+<!-- Para iniciar sessão -->
+<?php session_start(); ?>
+
+<?php
+
+if ((isset($_SESSION['level']) && $_SESSION['level'] == 'guest') || !isset($_SESSION['level']))
+  header("Location: ../index.php");
+
+?>
+
 <!-- Header -->
 <?php include "includes/admin_header.php" ?>
-
-
 
 <div class="container-fluid">
   <div class="row">
