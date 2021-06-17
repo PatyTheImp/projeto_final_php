@@ -36,21 +36,21 @@
     <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
 
     <div class="row">
-      <div class="form-floating mb-3 col-auto">
+      <div class="form-floating mb-3 col-md-6">
         <input type="text" class="form-control" id="floatingInput" name="nome" required>
         <label for="floatingInput">Nome</label>
       </div>
-      <div class="form-floating mb-3 col-auto">
+      <div class="form-floating mb-3 col-md-6">
         <input type="text" class="form-control" id="floatingInput" name="apelido" required>
         <label for="floatingPassword">Apelido</label>
       </div>
     </div>
     <div class="row">
-      <div class="form-floating mb-3 col-auto">
+      <div class="form-floating mb-3 col-md-6">
         <input type="text" class="form-control" id="floatingInput" name="username" required>
         <label for="floatingInput">Username</label>
       </div>
-      <div class="form-floating mb-3 col-auto">
+      <div class="form-floating mb-3 col-md-6">
         <input type="password" class="form-control" id="floatingPassword" name="password" required>
         <label for="floatingPassword">Password</label>
       </div>
@@ -101,7 +101,6 @@
         $_SESSION['level'] = 'guest';
 
         header("Location: home.php");
-        exit();
       }
     }
     
